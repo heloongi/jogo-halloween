@@ -20,9 +20,9 @@ public class flowers : MonoBehaviour
     {
         if(collider.gameObject.tag == "Player")
         {
-            //sr.enabled = false;
-            //circle.enabled = false;
-            //collected.SetActive(true);
+            sr.enabled = false;
+            circle.enabled = false;
+            collected.SetActive(true);
 
             Destroy(gameObject, 0.3f); 
         }
