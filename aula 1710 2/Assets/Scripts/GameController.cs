@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-   public int totalScore;
-   public TextMeshPro scoreText;
+    public int totalScore;
+    public TextMeshPro scoreText;
 
     public static GameController instance;
    

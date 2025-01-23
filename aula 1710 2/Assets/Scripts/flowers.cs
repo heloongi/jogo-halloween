@@ -9,6 +9,7 @@ public class flowers : MonoBehaviour
     private CircleCollider2D circle;
 
     public GameObject collected;
+    public int Score;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class flowers : MonoBehaviour
             GameController.instance.totalScore += Score;
             GameController.instance.UpdateScoreText();
 
-            Destroy(gameObject, 0.3f); 
+            Destroy(gameObject, 0.1f); 
         }
     }
 
