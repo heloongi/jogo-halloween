@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class flowers : MonoBehaviour
 {
@@ -24,7 +25,12 @@ public class flowers : MonoBehaviour
             circle.enabled = false;
             collected.SetActive(true);
 
+            GameController.instance.totalScore += Score;
+            GameController.instance.UpdateScoreText();
+
             Destroy(gameObject, 0.3f); 
         }
     }
+
+  
 }
